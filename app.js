@@ -23,7 +23,7 @@ const questionManagerArr = [
     {
         type: 'input',
         name: 'email',
-        message: 'What is the team manager\'s address?',
+        message: 'What is the team manager\'s email?',
         validate: input => !!input
     },
     {
@@ -50,7 +50,7 @@ const questionEngineerArr = [
     {
         type: 'input',
         name: 'email',
-        message: 'What is your engineer\'s address?',
+        message: 'What is your engineer\'s email?',
         validate: input => !!input
     },
     {
@@ -77,7 +77,7 @@ const questionInternArr = [
     {
         type: 'input',
         name: 'email',
-        message: 'What is your intern\'s address?',
+        message: 'What is your intern\'s email?',
         validate: input => !!input
     },
     {

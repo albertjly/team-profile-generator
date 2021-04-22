@@ -3,7 +3,7 @@ function generateCard(employee) {
     switch (employee.getRole()) {
         case 'Manager':
             role = `<i class="fas fa-glasses"></i>`;
-            special = `office No.: ${employee.getOfficeNumber()}`;
+            special = `office No: ${employee.getOfficeNumber()}`;
             break;
         case 'Engineer':
             role = `<i class="fab fa-github"></i>`;
