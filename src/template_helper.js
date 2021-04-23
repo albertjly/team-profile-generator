@@ -7,7 +7,7 @@ function generateCard(employee) {
             break;
         case 'Engineer':
             role = `<i class="fab fa-github"></i>`;
-            special = `GitHub: ${employee.getGitHub()}`;
+            special = `GitHub: <a href="http://github.com/${employee.getGitHub()}">${employee.getGitHub()}</a>`;
             break;
         case 'Intern':
             role = `<i class="far fa-id-card"></i>`;
@@ -20,15 +20,17 @@ function generateCard(employee) {
         <h2 class="name">${employee.getName()}</h2>
         <h3 class="role">${role}${employee.getRole()}</h3>
     </div>
-    <ul class="detail">
-        <li><p class="id">ID: ${employee.getId()}</p></li>
-        <li><p class="email">Email: ${employee.getEmail()}</p></li>
-        <li><p class="special">${special}</p></li>
-    </ul>
+    <div class="detail">
+        <ul>
+            <li><p class="id">ID: ${employee.getId()}</p></li>
+            <li><p class="email">Email: ${employee.getEmail()}</p></li>
+            <li><p class="special">${special}</p></li>
+        </ul>
+    </div>
 </div>`
 }
 
-function getHtml (employeeArr) {
+function getHtml(employeeArr) {
     return `<!DOCTYPE html>
     <html lang="en">
     

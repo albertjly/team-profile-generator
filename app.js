@@ -116,7 +116,6 @@ function questionLoop(data) {
         return inquirer
             .prompt(questionManagerArr)
             .then(({name, id, email, officeNumber}) => {
-                // data.role = 'Manager';
                 const employee = new Manager(name, id, email, officeNumber);
                 pushAndLoop(employee)
             });
@@ -124,7 +123,6 @@ function questionLoop(data) {
         return inquirer
             .prompt(questionEngineerArr)
             .then(({name, id, email, gitHub}) => {
-                // data.role = 'Manager';
                 const employee = new Engineer(name, id, email, gitHub);
                 pushAndLoop(employee)
             });
@@ -132,12 +130,10 @@ function questionLoop(data) {
         return inquirer
             .prompt(questionInternArr)
             .then(({name, id, email, school}) => {
-                // data.role = 'Manager';
                 const employee = new Intern(name, id, email, school);
                 pushAndLoop(employee)
             });
     }else {
-        // console.log(employeeArr);
         const htmlData = getHtml(employeeArr);
         fs.writeFile(path.join(__dirname, './dist/index.html'), htmlData, err => {
             if (err) throw new Error(err);
@@ -147,8 +143,6 @@ function questionLoop(data) {
 }
 
 function pushAndLoop(data) {
-    // console.log(data);
-    // writeToFile(`${data.role}-${data.name}.json`, JSON.stringify(data));
     employeeArr.push(data);
     init();
 }

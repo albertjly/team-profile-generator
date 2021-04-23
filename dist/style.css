@@ -34,7 +34,7 @@ header {
 
 .row {
     margin: 0 auto;
-    width: 70%;
+    width: 80%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -45,6 +45,7 @@ header {
     height: 340px;
     background-color: #fff;
     margin: 10px;
+    margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 3px 3px 8px black;
     overflow: hidden;
@@ -55,7 +56,10 @@ header {
 
 .col-4:hover {
     transform: scale(1.01);
-    cursor: pointer;
+}
+
+.col-4:last-child{
+    margin-bottom: 30px;
 }
 
 .top {
@@ -69,12 +73,12 @@ header {
 }
 
 .name {
-    font-size: 2.5vh;
+    font-size: 1.8rem;
 }
 
 .role {
     margin-top: 3%;
-    font-size: 1.7vh;
+    font-size: 1.2rem;
     opacity: .9;
 }
 
@@ -83,31 +87,38 @@ header {
 }
 
 .detail {
-    margin-bottom: 10px;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-.detail li {
-    margin: 0 auto;
+.detail ul{
     width: 86%;
-    /*background-color: #eee;*/
+    margin: 0 auto;
+}
+
+.detail ul li {
+    margin: 0 auto;
     border-top: 1px solid #bbb;
     border-left: 1px solid #bbb;
     border-right: 1px solid #bbb;
     height: 5vh;
 }
 
-.detail li:first-child {
+.detail ul li:first-child {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
 
-.detail li:last-child {
+.detail ul li:last-child {
     border-bottom: 1px solid #bbb;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
-.detail li p {
+.detail ul li p {
     line-height: 5vh;
     padding-left: 10px;
 }
