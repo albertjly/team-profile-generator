@@ -65,7 +65,7 @@ Testing js files in Jest.js is delightful. I can check my coding by just testing
 
 ![MIT License](https://img.shields.io/badge/license-MIT%20License-green.svg)
 
-Copyright (c) [year] [fullname]
+Copyright (c) 2021 Albert Jiang
 
 https://choosealicense.com/licenses/mit/
 
